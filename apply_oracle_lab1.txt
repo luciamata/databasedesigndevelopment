@@ -1,0 +1,25 @@
+SQL> 
+SQL> SELECT   table_name
+  2  FROM     user_tables
+  3  WHERE    table_name NOT IN ('EMP','DEPT')
+  4  AND NOT  table_name LIKE 'DEMO%'
+  5  AND NOT  table_name LIKE 'APEX%'
+  6  ORDER BY table_name;
+
+TABLE_NAME                                                                      
+----------------                                                                
+ADDRESS                                                                         
+COMMON_LOOKUP                                                                   
+CONTACT                                                                         
+ITEM                                                                            
+MEMBER                                                                          
+RENTAL                                                                          
+RENTAL_ITEM                                                                     
+STREET_ADDRESS                                                                  
+SYSTEM_USER                                                                     
+TELEPHONE                                                                       
+
+10 rows selected.
+
+SQL> 
+SQL> SPOOL OFF
